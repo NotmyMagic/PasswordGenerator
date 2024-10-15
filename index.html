@@ -7,6 +7,36 @@
     <title>Password Generator</title>
   </head>
   <body>
+    <div class="container">
+      <h1>Password Generator</h1>
+      <br />
+      <br />
+      <div>
+        <label for="length"> Password Length: </label>
+        <input type="number" id="length" value="10" min="8" max="20" />
+      </div>
+      <!-- Add a div, and inside add 1 label for uppercase, and a checkbox  -->
+      <div>
+        <label for="uppercase" name="uppercase">Include Uppercase:</label>
+        <input type="checkbox" id="capital" />
+      </div>
+      <!-- Add a div, and inside add 1 label for numbers, and a checkbox  -->
+      <div>
+        <label for="lowercase" name="lowercase">Include lowercase:</label>
+        <input type="checkbox" id="lowercase" />
+      </div>
+      <!-- Add a div, and inside add 1 label for symbols, and a checkbox  -->
+      <div>
+        <label for="symbols" name="symbols">Include Symbols:</label>
+        <input type="checkbox" id="symbols" />
+      </div>
+      <button id="generate">Generate Password</button>
+      <div>
+        <label for="length"> Password Length: </label>
+        <input type="text" id="password" name="password" readonly />
+      </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
